@@ -21,13 +21,14 @@ $(function(){
    
     $.ajax({
         type: "get",
-        url: "http://hunter.chebutou.com.cn/hunterServer/content/getWebsiteData",
+        url: "http://javadev:8280/hunterServer/content/getWebsiteData",
         dataType: "json",
         headers: {
             'Content-type': 'application/x-www-form-urlencoded;charset=UTF-8'
         },
         success: function(data){
             var res = data.data;
+            console.log(data)
             if(res.code === 'SUCCESS'){
                 $('.third_number_task').html(res.data.totalTask);
                 $('.third_number_prices').html(res.data.totalPrices);
