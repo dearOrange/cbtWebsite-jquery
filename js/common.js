@@ -28,12 +28,11 @@ $(function(){
         },
         success: function(data){
             var res = data.data;
-            console.log(res)
-            if(res.code === 'SUCCESS'){
-                $('.third_number_task').html(res.data.totalTask);
-                $('.third_number_prices').html(res.data.totalPrices);
-                $('.third_number_downstream').html(res.data.totalDownstream);
-                $('.third_number_upstream').html(res.data.totalUpstream);
+            if(data.code === 'SUCCESS'){
+                $('.third_number_task').html(res.totalTask);
+                $('.third_number_prices').html(res.totalPrices);
+                $('.third_number_downstream').html(res.totalDownstream);
+                $('.third_number_upstream').html(res.totalUpstream);
             }
         }
     });
