@@ -28,8 +28,8 @@ $(function(){
         },
         success: function(data){
             var res = data.data;
+            console.log(res)
             if(res.code === 'SUCCESS'){
-            console.log(data)
                 $('.third_number_task').html(res.data.totalTask);
                 $('.third_number_prices').html(res.data.totalPrices);
                 $('.third_number_downstream').html(res.data.totalDownstream);
