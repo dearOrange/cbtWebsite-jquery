@@ -1159,6 +1159,7 @@ dl.componey_show dd{
     }
     #footer_contain .footer_box div.footer_show .footer_remark{
         display: block;
+        z-index: 99;
         /* transform: rotate3d(0, 0, 1, -45deg); */
     }
     #footer_contain .footer_box div.footer_show .footer_lines{
