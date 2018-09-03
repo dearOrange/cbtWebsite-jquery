@@ -59,8 +59,8 @@ $(function(){
         $(this).toggleClass('active').next('ul').slideToggle(300);
         e.stopImmediatePropagation()
     });
-    $('body').off('click', '.footer_remark').on('click', '.footer_remark', function() {
-        $(this).parent('.footer_title').siblings('.aa_content').slideToggle(300);
+    $('body').off('click', '.footer_title').on('click', '.footer_title', function() {
+        $(this).siblings('.aa_content').slideToggle(300);
     });
     $('.person_img').on('click', function() {
         $('.link_person').slideToggle(300);
