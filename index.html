@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>杭州车捕头信息科技有限公司</title>
     <meta name="author" content="杭州车捕头信息科技有限公司">
@@ -12,36 +12,59 @@
     <meta name="description" content="杭州车捕头信息科技有限公司创建于互联网创新之城杭州，位于运河汽车互联网产业园，是一家依托大数据的汽车相关不良资产处置综合服务平台，让找车变得简单，致力于打造中国最大的汽车不良资产处置平台">
     <link rel="shortcut icon" href="favicon.ICO" type="image/x-icon" />
     <!-- Bootstrap  -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link href="https://cdn.bootcss.com/fullPage.js/2.9.7/jquery.fullpage.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/common.js"></script>
 </head>
 <body>
     <div id="header_contain">
-        <div class="header_box">
-            <div class="navTwo">
-                <a class="nav_mark nav_active" href="index.html">首页</a>
-                <a class="nav_mark" href="introduce.html">产品与介绍</a>
-                <a class="nav_mark" href="about.html">关于我们</a>
-            </div>
-            <div class="navOne navTwo">
-                <img src="img/second_logo1.png" alt="logo">
-            </div>
-            <div class="navTwo" style="position:relative;">
-                <a class="wechat_hover" href="javascript:(void);">微信公众号</a>
-                <a class="upAPP_hover" href="javascript:(void);">手机APP</a>
-                <a class="login_style" href="http://loaner.chebutou.com.cn/src/modules/login/login.html">债权方登陆</a>
-                <a class="login_style" href="http://loaner.chebutou.com.cn/src/modules/register/register.html">债权方注册</a>
-                <div class="wechat_img">
-                    <img src="img/sixth_wechat.png" alt="微信公众号">
+        <div class="header_box row">
+            <div class="first_header col-md-4 col-xs-12" style="text-align: right;">
+                <div class="btn-menu" style="text-align: right;">
+                    <span></span>
                 </div>
-                <div class="app_loader">
-                    <img src="http://hunter.chebutou.com.cn/hunterServer/content/showQRCode" alt="下载APP">
+                <!-- //mobile menu button -->
+                <div class="navTwo mainnav" id="mainnav" style="text-align: right;">
+                    <ul class="menu-ul">
+                        <li><a class="nav_mark nav_active" href="index.html">首页</a></li>
+                        <li><a class="nav_mark" href="introduce.html">产品与介绍</a></li>
+                        <li><a class="nav_mark" href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second_header col-md-3 col-xs-12">
+                <div class="navOne navTwo">
+                    <img src="img/second_logo1.png" alt="logo">
+                </div>
+            </div>
+            <div class="person_img"></div>
+            <div class="col-md-5 col-xs-12">
+                <div class="navTwo navThree" style="position:relative;">
+                    <ul class="menu-ul">
+                        <li><a class="wechat_hover" href="javascript:(void);">微信公众号</a></li>
+                        <li><a class="upAPP_hover" href="javascript:(void);">手机APP</a></li>
+                        <li><a class="login_style" href="http://loaner.chebutou.com.cn/src/modules/login/login.html">债权方登陆</a></li>
+                        <li><a class="login_style" href="http://loaner.chebutou.com.cn/src/modules/register/register.html">债权方注册</a></li>
+                    </ul>
+                    <div class="wechat_img">
+                        <img src="img/sixth_wechat.png" alt="微信公众号">
+                    </div>
+                    <div class="app_loader">
+                        <img src="http://hunter.chebutou.com.cn/hunterServer/content/showQRCode" alt="下载APP">
+                    </div>
+                </div>
+                <div class="link_person">
+                    <ul class="menu-ul">
+                        <li><p style="color:#fff;">微信公众号</p><img style="margin: auto;" src="img/sixth_wechat.png" alt="微信公众号"></li>
+                        <li><p style="color:#fff;">手机APP</p><img style="margin: auto;" src="http://hunter.chebutou.com.cn/hunterServer/content/showQRCode" alt="下载APP"></li>
+                        <li><a href="http://loaner.chebutou.com.cn/src/modules/login/login.html">债权方登陆</a></li>
+                        <li><a href="http://loaner.chebutou.com.cn/src/modules/register/register.html">债权方注册</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -93,8 +116,8 @@
                 <span>技术支持</span>
                 <span class="second_footer_lines"></span>
             </div>
-            <div class="second_list">
-                <dl>
+            <div class="second_list row">
+                <dl class="col-md-3 col-xs-6">
                     <dd><img src="img/second_first.png" alt=""></dd>
                     <dt>
                         <p class="descript_first">车辆迅速追踪</p>
@@ -102,7 +125,7 @@
                         <p class="descript_second">帮助您快速定位车辆</p>
                     </dt>
                 </dl>
-                <dl>
+                <dl class="col-md-3 col-xs-6">
                     <dd><img src="img/second_second.png" alt=""></dd>
                     <dt>
                         <p class="descript_first">网络大数据调查</p>
@@ -110,7 +133,7 @@
                         <p class="descript_second">第一时间得到信息</p>
                     </dt>
                 </dl>
-                <dl>
+                <dl class="col-md-3 col-xs-6">
                     <dd><img src="img/second_third.png" alt=""></dd>
                     <dt>
                         <p class="descript_first">资料数据化支持</p>
@@ -118,7 +141,7 @@
                         <p class="descript_second">方便日后追溯查看</p>
                     </dt>
                 </dl>
-                <dl>
+                <dl class="col-md-3 col-xs-6">
                     <dd><img src="img/second_fourth.png" alt=""></dd>
                     <dt>
                         <p class="descript_first">信息实时推送</p>
@@ -241,7 +264,7 @@
                     </dl>
                     <dl>
                         <dd style="margin-top:8px;"><img src="img/fourth_iphone.png" alt="iPhone下载"></dd>
-                        <dt style="margin-top:40px;"><img src="img/fourth_andriod.png" alt="andriod下载"></dt>
+                        <dt style="margin-top:40px;" class="android_class"><img src="img/fourth_andriod.png" alt="andriod下载"></dt>
                     </dl>
                     <dl class="app_uploader">
                         <dd><img src="http://hunter.chebutou.com.cn/hunterServer/content/showQRCode" alt="APP下载"></dd>
@@ -373,28 +396,44 @@
             <div id="footer_contain" style="position:absolute;bottom:0;">
                 <div class="footer_box">
                     <div class="footer_show">
-                        <p class="footer_title">关于我们</p>
-                        <p class="footer_lines"></p>
-                        <p style="text-align: left;">杭州车捕头信息科技有限公司创建于互联网创新之城杭州，是一家依托大数据的汽车相关不良资产处置综合服务平台，让找车变得简单，致力于打造中国最大的汽车不良资产处置平台。</p>
-                    </div>
-                    <div class="footer_show">
-                        <p class="footer_title">加入我们</p>
-                        <p class="footer_lines"></p>
-                        <p style="margin-bottom:10px;text-align: left;">联系电话：0571-87001678</p>
-                        <p>
-                            <span style="float:left;">公司地址：</span>
-                            <span style="float:left;width:154px;text-align: left;">杭州市拱墅区石祥路688号  杭州运河汽车互联网产业园</span>
+                        <p class="footer_title">关于我们
+                            <span class="footer_remark">+</span>
                         </p>
+                        <p class="footer_lines"></p>
+                        <div class="aa_content">
+                            <p class="footer_content" style="text-align: left;">杭州车捕头信息科技有限公司创建于互联网创新之城杭州，是一家依托大数据的汽车相关不良资产处置综合服务平台，让找车变得简单，致力于打造中国最大的汽车不良资产处置平台。</p>
+                        </div>
                     </div>
                     <div class="footer_show">
-                        <p class="footer_title">微信平台</p>
+                        <p class="footer_title">加入我们
+                            <span class="footer_remark">+</span>
+                        </p>
                         <p class="footer_lines"></p>
-                        <img src="img/sixth_wechat.png" alt="微信平台">
+                        <div class="aa_content">
+                            <p class="footer_content" style="margin-bottom:10px;text-align: left;">联系电话：0571-87001678</p>
+                            <p class="footer_content">
+                                <span style="float:left;">公司地址：</span>
+                                <span style="float:left;width:154px;text-align: left;">杭州市拱墅区石祥路688号  杭州运河汽车互联网产业园</span>
+                            </p>
+                        </div>
                     </div>
                     <div class="footer_show">
-                        <p class="footer_title">手机APP</p>
+                        <p class="footer_title">微信平台
+                            <span class="footer_remark">+</span>
+                        </p>
                         <p class="footer_lines"></p>
-                        <img src="http://hunter.chebutou.com.cn/hunterServer/content/showQRCode" alt="APP下载">
+                        <div class="aa_content">
+                            <img class="footer_content" src="img/sixth_wechat.png" alt="微信平台">
+                        </div>
+                    </div>
+                    <div class="footer_show">
+                        <p class="footer_title">手机APP
+                            <span class="footer_remark">+</span>
+                        </p>
+                        <p class="footer_lines"></p>
+                        <div class="aa_content">
+                            <img class="footer_content" src="http://hunter.chebutou.com.cn/hunterServer/content/showQRCode" alt="APP下载">
+                        </div>
                     </div>
                 </div>
                 <div class="footer_copy">Copyright © 2016-2017 chebutou.com.cn 版权所有 浙ICP备17001441号-1</div>
