@@ -810,6 +810,12 @@ dl.componey_show dd{
     .link_person{
         display:none !important;
     }
+    .about_img_one{
+        /* display: block; */
+    }
+    .about_img_two{
+        display: none;
+    }
 }
 @media only screen and (max-width: 991px){
 	.btn-menu {
@@ -1180,5 +1186,14 @@ dl.componey_show dd{
     }
     .col-xs-12{
         padding: 0;
+    }
+    #aboutSectionFour, #aboutSectionFive{
+        height:auto;
+    }
+    .about_img_one{
+        display:none;
+    }
+    .about_one img{
+        height:auto;
     }
 }
