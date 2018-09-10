@@ -512,7 +512,7 @@ a:hover{
     font-family:PingFangSC-Regular;
     color:rgba(255,255,255,1);
     line-height:22px;
-    margin:30px auto 20px;
+    margin:0 auto 20px;
 }
 
 /* 产品与介绍 */
@@ -806,12 +806,18 @@ dl.componey_show dd{
     display: none;
     /* transform: rotate3d(0, 0, 1, -45deg); */
 }
+.link_phone{
+    display:none;
+    width:130px;
+    height:34px;
+    border:1px solid rgba(151,151,151,1);
+    margin:10px auto;
+    line-height: 34px;
+    text-align: center;
+}
 @media (min-width: 992px) {
     .link_person{
         display:none !important;
-    }
-    .about_img_one{
-        /* display: block; */
     }
     .about_img_two{
         display: none;
@@ -1218,5 +1224,14 @@ dl.componey_show dd{
     .componey_description{
         font-size: 12px;
         margin-top:14px;
+    }
+    .link_phone_none{
+        display:none;
+    }
+    .link_phone{
+        display:block;
+    }
+    .link_address_none{
+        width:auto !important;
     }
 }
